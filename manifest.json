@@ -1,0 +1,24 @@
+{
+    "name": "Letteroxd Private Review Extension",
+    "description": "You can write private reviews that are only visible to you on Letterboxd. You can view all of them on your diary page.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+            "matches": ["https://letterboxd.com/*/film/*"],
+            "js": ["display-review-script.js"]
+        },
+        {
+            "matches": ["https://letterboxd.com/film/*", "https://letterboxd.com/*/film/*"],
+            "css": ["review.css"],
+            "js": ["review-script.js"]
+        }
+    ],
+    "icons": {
+        "16": "/images/get_started16.png",
+        "32": "/images/get_started32.png",
+        "48": "/images/get_started48.png",
+        "128": "/images/get_started128.png"
+    }
+}
