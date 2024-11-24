@@ -1,11 +1,3 @@
-div#colorbox {
-    height: 550px;
-}
-
-div#cboxLoadedContent {
-    height: 550px;
-}
-
 form[id='diary-entry-form'] > fieldset > div.form-row > textarea {
     margin-top: 7px;
 }
